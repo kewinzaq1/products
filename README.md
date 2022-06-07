@@ -10,11 +10,12 @@
 |--------------|--------------------|
 | React        | Frontend framework |
 | TypeScript   | Language           |
+| RTL and Jest | Tests              | 
 | React Router | Routing            |
 | Material UI  | Components         |
 | Axios        | HTTP Client        |
 
-## Available scripts    
+## Available scripts
 
 | Command         | Description            |
 | --------------- | ---------------------- |
