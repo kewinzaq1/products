@@ -12,6 +12,7 @@ const ProductsProvider = ({children}: {children: React.ReactNode}) => {
   const [url, setUrl] = React.useState(INITIAL_API_URL)
 
   React.useMemo(() => {
+    setError(null)
     axios
       .get(url)
       .then((response: AxiosResponse<Products>) => {
