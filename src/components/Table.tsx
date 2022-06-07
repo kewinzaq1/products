@@ -10,7 +10,8 @@ import {
   TextField,
   Typography,
   Table as MuiTable,
-  TableBody
+  TableBody,
+  Alert
 } from '@mui/material'
 import {useProducts} from '../context'
 
@@ -31,7 +32,7 @@ const headerStyles = {
 }
 
 const Table = () => {
-  const {products, url, setUrl} = useProducts()
+  const {products, url, setUrl, error} = useProducts()
   const [page, setPage] = React.useState(1)
   const [displayedProducts, setDisplayedProducts] = React.useState(
     products?.data
@@ -67,6 +68,7 @@ const Table = () => {
           <Typography variant={'h4'} component={'h1'}>
             Discover our product's
           </Typography>
+          {error && <Alert severity="error">{error.message}</Alert>}
         </Box>
         <Box component={'form'} onSubmit={handleId} sx={{width: '100%'}}>
           <TextField
@@ -129,7 +131,7 @@ const Table = () => {
               <TableRow>
                 <TableCell>
                   <Typography sx={{padding: '1rem'}}>
-                    Ooops! Not Found
+                    Oops! Not Found
                   </Typography>
                 </TableCell>
               </TableRow>
