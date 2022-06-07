@@ -1,19 +1,20 @@
-<h1 align="center">Books</h1>
+<h1 align="center">Products</h1>
 
 ## Project Overview 🎉
 
-<h4 align="center">Book list app created using Create-React-App for purposes of a recruitment task</h4>
+<h4 align="center">Products Table App</h4>
 
 ## Tech/framework used 🔧
 
 | Tech         | Description        |
-| ------------ | ------------------ |
+|--------------|--------------------|
 | React        | Frontend framework |
 | TypeScript   | Language           |
 | React Router | Routing            |
 | Material UI  | Components         |
+| Axios        | HTTP Client        |
 
-## Available scripts
+## Available scripts    
 
 | Command         | Description            |
 | --------------- | ---------------------- |
